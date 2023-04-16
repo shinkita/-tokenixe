@@ -16,8 +16,8 @@ const Home = ({ frontmatter }) => {
   return (
     <Base title={title}>
       {/* Banner */}
-   
-          <section className="bg-theme-light">          
+     
+          <section className="bg-theme-light">             
         
             <div>
               <div className="sliderWrapper flex justify-evenly items-center sm: mt-[80px] p-10">

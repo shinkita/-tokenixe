@@ -9,8 +9,8 @@ const Header = () => {
   //router
   const router = useRouter();
 
-  // distructuring the main menu from menu object
-  const { main } = menu;
+  // distructuring the Secondmain menu from menu object
+  const { Secondmain } = menu;
 
   // states declaration
   const [navOpen, setNavOpen] = useState(false);
@@ -58,7 +58,7 @@ const Header = () => {
         >
           
           <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
-            {main.map((menu, i) => (
+            {Secondmain.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
                   <li className="md:nav-item nav-dropdown group relative sm:mbnav-item">

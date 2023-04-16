@@ -6,7 +6,7 @@
 // container
 
 .banner{
-  @apply  text-primary flex  justify-center items-center bg-gray-200 mt-[60px] ;
+  @apply  text-primary flex  justify-center items-center bg-gray-200 mt-[90px] ;
 
  
 }
@@ -122,7 +122,7 @@ position:relative;
 }
 
  .timer{
-  background: #FBEDF0;
+  background: #FAFAFA;
   border-radius: 10px;
   padding: 4px 6px 3px 4px;
     font-size: 11px;
@@ -136,7 +136,7 @@ position:relative;
 .typeoffering{
   background: #fff;
   border-radius: 5px;
-  color: #DC2751;
+  color: #377DFF;
   top: 10px;
   right: 15px;
   padding: 7px;
@@ -150,7 +150,7 @@ position:relative;
 {
   background: #fff;
   border-radius: 7px;
-  color: #DC2751;
+  color: #377DFF;
   top: 10px;
   left: 15px;
   font-size: 11px;

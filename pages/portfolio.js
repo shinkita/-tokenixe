@@ -1,8 +1,18 @@
 import {RiHandCoinLine} from "react-icons/ri";
+import config from "@config/config.json";
+import Header from "@partials/Header"
+import Footer from "@partials/Footeruser"
+import PropertyList from "@layouts/partials/PropertyList"
 const Portfolio=()=>{
 return(
-    <>
-      <div className="container">
+  <>
+  <Header/>
+  <section className="my-[50px]">
+  <main>
+
+
+</main>
+<div className="container">
     <div className="row pt-20">
     <h2>My Portfolio</h2>
     </div>
@@ -16,7 +26,7 @@ return(
             <h5 className="font-bold mb-2 block">Balance</h5>
             <h3 className="font-bold block">$750.90</h3>
             <div className="mt-2 mb-0 text-xs">
-          <span className="badge bg-soft-success text-lg  text-black font-bold py-1 rounded-full mr-2 flex items-center leading-8">
+          <span className="badge bg-soft-success text-lg  text-default font-bold py-1 rounded-full mr-2 flex items-center leading-8">
             13% Appreciation<i className="bi bi-arrow-up me-1"></i>
           </span>
           <span className="text-lg  text-black font-bold">$ 0.0 Intial Investments</span>
@@ -70,6 +80,12 @@ return(
 </div>
   
     </div>
+    <PropertyList/>
+  </section>
+
+  <Footer/>
+
+     
     </>
 )
 }

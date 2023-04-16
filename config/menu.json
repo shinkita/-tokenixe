@@ -19,6 +19,26 @@
     }
     
   ],
+  "Secondmain": [
+    {
+      "name": "Browse Reats",
+      "url": "/blogs"
+    },
+    {
+      "name": "Portfolio",
+      "url": "/portfolio"
+    },
+    {
+      "name": "Transaction History",
+      "url": "/transaction"
+    },
+    
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+    
+  ],
   "footer": [
     {
       "name": "Quick Links",
