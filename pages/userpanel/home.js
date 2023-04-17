@@ -1,7 +1,7 @@
 import config from "@config/config.json";
 import Header from "@partials/Headeruser"
 import Footer from "@partials/Footeruser"
-import Portfolio from "pages/Portolio";
+// import Portfolio from "pages/Portolio";
 import PropertyList from "@layouts/partials/PropertyList"
 const home=()=>{
 return(
@@ -9,7 +9,7 @@ return(
     <Header/>
     <section className="my-[50px]">
     <main>
- <Portfolio/>
+ {/* <Portfolio/> */}
  <PropertyList/>
 </main>
     </section>
