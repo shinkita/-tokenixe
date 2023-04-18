@@ -20,47 +20,79 @@ return (
            height={500}
                     />
                   
-                     <span className="type font-semibold">  {Val.listing_type}</span>
-                    <span className="typeoffering font-semibold flex items-center">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
+                  <span className="type font-semibold">  {Val.listing_type}</span>
+                     {/* <span className="type font-semibold border-2 border-solid border-blue-500">  {Val.listing_type}</span> */}
+                    {/* <span className="typeoffering font-semibold flex items-center border-2 border-solid border-blue-500">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
+                    <Image src="/images/coin1.svg"
+                    alt="icon"
+                    width={15}
+                    height={15}/>
+                    </span> */}
+                     <span className="typeoffering font-semibold flex items-center ">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
                     <Image src="/images/coin1.svg"
                     alt="icon"
                     width={15}
                     height={15}/>
                     </span>
-                    <span className="timer flex items-center"><Image src="/images/TimeMachine.svg"
+                    <span className="timer flex items-center "><Image src="/images/TimeMachine.svg"
                     alt="icon"
                     width={14}
                     height={14}/>{Val.days}</span>
+                     {/* <span className="timer flex items-center border-2 border-solid border-blue-500"><Image src="/images/TimeMachine.svg"
+                    alt="icon"
+                    width={14}
+                    height={14}/>{Val.days}</span> */}
          </div>
-         <div className="card-body listDetails">
-           <h5 className="card-title text-default pt-1 pb-2">
+
+          
+         <div className="card-body listDetails  pt-3">
+         <div className="flex justify-between align-middle py-1 ">  
+           <span className="bg-teal-200 rounded-r-[15px] p-4"><span className="text-primary font-bold py-2">{Val.totalSupply}</span> <span className="font-bold text-white py-2">total supply  &nbsp; </span>
+
+            </span><span> <Link className="btn bg-primary font-bold text-white text-medium z-0 py-[8px] btnInvest ml-2 " href="#" rel="">
+             {Val.btntext}
+            </Link> </span>
+           </div>
+           <h5 className="card-title text-default pt-1 pb-3 px-4 ">
              {Val.title} 
             
            </h5>
-           <p className="text-default flex">
+           <p className="text-default flex px-4">
            <Image src="/images/location.svg"
                     alt="icon"
                     width={10}
                     height={10}/> &nbsp;&nbsp;
             {Val.location} </p>
-           <div className="card-text pt-1">{Val.desc}</div>
-           <p className="text-primary flex ">
+           <div className="card-text pt-1 px-4">{Val.desc}</div>
+          
+           <p className="text-primary flex px-4 pt-1 pb-3">
            <Image src="/images/bed.svg"
                     alt="icon"
                     width={15}
                     height={15}/> &nbsp;&nbsp;
             {Val.bhk} </p>
-           <p className="card-text font-bold detailtext pt-4 pb-1 flex">Dividend <span className="text-primary"> &nbsp;{Val.DividendPercentage}</span>&nbsp;&nbsp;  Starts from  <Image src="/images/Tether.svg"
+            
+         
+           <div className="bg-slate-100  py-[10px] rounded-lg flex justify-around">
+           <p><small>Dividend</small>
+           <br/>
+           <span className="text-primary  font-bold"> &nbsp;{Val.DividendPercentage}</span>
+           </p>
+           <p>
+            <div className="flex">
+           <span><small> Starts from</small> </span><span><Image src="/images/Tether.svg"
                     alt="icon"
-                    width={25}
-                    height={25}/><span className="text-primary"> {Val.reats}</span> &nbsp;Reats </p>
-           <p className="card-text font-bold detailtext pb-4">Dividends  <span className="text-primary font-normal">{Val.scheme}</span> </p>
-          <div className="flex   justify-between align-middle">
-           <span> <span className="font-bold text-grayshade">Total Supply :  &nbsp; </span><span className="text-primary font-bold">{Val.totalSupply}</span>
-
-            </span><span> <Link className="btn bg-primary font-bold text-white text-medium z-0 py-[8px] btnInvest ml-2 " href="#" rel="">
-             {Val.btntext}
-            </Link> </span>
+                      width={25}
+                    height={25}/></span>
+                    </div>
+                  
+                    <span className="text-primary font-bold"> {Val.reats}</span> &nbsp;Reats 
+           </p>
+           <p><small>Dividends</small>
+           <br/>
+          
+           <span className="text-primary font-bold">{Val.scheme}</span>
+           </p>
            </div>
          </div>
        </div>
