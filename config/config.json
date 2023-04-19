@@ -67,7 +67,8 @@
      "ListingImage":"/images/1.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/core.png",
-     "btntext":"Invest Now"
+     "btntext":"Invest Now",
+     "icon":"/images/like.svg"
   },
   {
     "id":"2",
@@ -83,7 +84,8 @@
      "ListingImage":"/images/2.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/core.png",
-     "btntext":"Invest Now"
+     "btntext":"Invest Now",
+     "icon":"/images/like.svg"
   },
   {
     "id":"3",
@@ -99,7 +101,8 @@
      "ListingImage":"/images/3.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/partner.png",
-     "btntext":"View Details"
+     "btntext":"View Details",
+     "icon":"/images/eye.svg"
   },
   {
     "id":"4",
@@ -115,7 +118,8 @@
      "ListingImage":"/images/4.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/core.png",
-     "btntext":"Invest Now"
+     "btntext":"Invest Now",
+     "icon":"/images/like.svg"
   },
   {
     "id":"5",
@@ -131,7 +135,8 @@
      "ListingImage":"/images/5.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/partner.png",
-     "btntext":"View Details"
+     "btntext":"View Details",
+     "icon":"/images/eye.svg"
   },
   {
     "id":"6",
@@ -147,7 +152,8 @@
      "ListingImage":"/images/7.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/core.png",
-     "btntext":"Invest Now"
+     "btntext":"Invest Now",
+     "icon":"/images/like.svg"
   },
   {
     "id":"7",
@@ -163,7 +169,8 @@
      "ListingImage":"/images/8.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/partner.png",
-     "btntext":"Notify Me"
+     "btntext":"Notify Me",
+     "icon":"/images/Alarm.svg"
   }
   ]
   ,

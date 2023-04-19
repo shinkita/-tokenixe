@@ -4,29 +4,16 @@ import Link from "next/link";
 import React, { useState,useEffect } from "react";
 import Listing from "./Listing";
 import Listingtabs from "./Listingtabs";
+import { MyContext } from '../components/MenuContext'
+import DesktopTabs from './DesktopTabs';
+import MobileTabs from './MobileTabs';
 const Posts = ({ posts }) => {
   // const [item, setItem] = useState(config.listingdata);
   const { blog_folder, summary_length } = config.settings;
   const [openTab, setOpenTab] = React.useState(1);
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
-  // const filterItem = (curcat) => {
-  //   const newItem = config.menuItems.filter((newVal) => {
-  //     return newVal.category === curcat;
-  //   });
-  //   setItem(newItem);
-  // };
-  // const filteredItems = config.menuItems.filter((item) => {
-  //   if (activeTab === 'all') {
-  //     console.log("All")
-  //     return true;
-
-  //   } else {
-  //     return item.categoryTitle === activeTab;
-     
-  //   }
-  // });
-
-  const allCategories = ['All', ...new Set(config.listingdata.map(item => item.listing_type))];
+   const allCategories = ['All', ...new Set(config.listingdata.map(item => item.listing_type))];
 const items =config.listingdata;
   console.log(allCategories);
   const [menuItem, setMenuItem] = useState(items);
@@ -46,17 +33,17 @@ const items =config.listingdata;
     console.log(menuItem);
   }, [menuItem])
 
+
   return (
     <div className="container pb-0">
      <div className="row pt-10">
-     {/* <Listingtabs activeTab={activeTab} onTabClick={setActiveTab} /> */}
-
-    <Listingtabs  button={buttons} filter={filter}/>
-          {/* <Listingtabs
-            filterItem={filterItem}
-            setItem={setItem}
-            menuItems={config.menuItems}
-          /> */}
+     <MyContext.Provider value={{buttons,filter}}>
+     {/* <Listingtabs  button={buttons} filter={filter}/> */}
+     <Listingtabs/>
+     </MyContext.Provider>
+    
+   
+   
           </div>
           <div className="row ListingData pt-5">
       

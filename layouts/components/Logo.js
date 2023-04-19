@@ -9,7 +9,7 @@ const Logo = ({ src }) => {
 
   return (
     <Link
-      href={base_url}
+      href="https://tokenixe.com/"
       className="navbar-brand block py-1"
       style={{
         height: logo_height.replace("px", "") + "px",
@@ -21,7 +21,7 @@ const Logo = ({ src }) => {
           width={logo_width.replace("px", "") * 2}
           height={logo_height.replace("px", "") * 2}
           src={src ? src : logo}
-          alt={title}
+          alt="Tokenixe"
           priority
         />
       ) : logo_text ? (

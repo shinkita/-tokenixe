@@ -1,24 +1,53 @@
-import React from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import config from "@config/config.json";
+import { useContext } from 'react';
+import { MyContext } from '../components/MenuContext';
+import MobileTabs from "./MobileTabs";
+import DesktopTabs from "./DesktopTabs";
+
  
 // const menuItems = [...new Set(config.menuItems.map((Val) => Val.CategoryTitle))];
 
+const useMediaQuery = (width) => {
+ const [targetReached, setTargetReached] = useState(false);
 
-const Listingtabs = ({button,filter}) => {
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const media = window.matchMedia(`(max-width:${width}px)`);
+      media.addEventListener('change', updateTarget);
+
+      if (media.matches) {
+        setTargetReached(true);
+      }
+
+      return () => media.removeEventListener('change', updateTarget);
+    }
+  }, [width, updateTarget]);
+
+  return targetReached;
+};
+const Listingtabs = () => {
+  const {buttons,filter} =useContext(MyContext)
+  const isBreakpoint = useMediaQuery(768);
    return (
     <>
+ {isBreakpoint ? (
+        <div>
+          <MobileTabs />
+        </div>
+      ) : (
+        <div>
+          <DesktopTabs />
+        </div>
+      )}
 
-<div className="ltabs mx-[20px]">
-      {button.map((cat, i) => {
-        return (
-       
-          <button onClick={() => filter(cat)} className="btntabs active border-none text-default bg-zinc-50 p-2 px-2 mr-5 btn" key={i}>
-            {cat}
-          </button>
-          
-        );
-      })}
-    </div>
 
 
    {/* <div className="d-flex justify-content-center">

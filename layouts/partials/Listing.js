@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import Image from "next/image";
 import Link from "next/link";
+import { BsHeartFill } from "react-icons/bs";
 const Listing = ({menuItem}) => {            
   
 return (
@@ -20,7 +21,7 @@ return (
            height={500}
                     />
                   
-                  <span className="type font-semibold">  {Val.listing_type}</span>
+                  <span className="type">  {Val.listing_type}</span>
                      {/* <span className="type font-semibold border-2 border-solid border-blue-500">  {Val.listing_type}</span> */}
                     {/* <span className="typeoffering font-semibold flex items-center border-2 border-solid border-blue-500">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
                     <Image src="/images/coin1.svg"
@@ -28,7 +29,7 @@ return (
                     width={15}
                     height={15}/>
                     </span> */}
-                     <span className="typeoffering font-semibold flex items-center ">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
+                     <span className="typeoffering flex items-center">Offering Type: {Val.OfferingType}&nbsp;  &nbsp; 
                     <Image src="/images/coin1.svg"
                     alt="icon"
                     width={15}
@@ -37,7 +38,7 @@ return (
                     <span className="timer flex items-center "><Image src="/images/TimeMachine.svg"
                     alt="icon"
                     width={14}
-                    height={14}/>{Val.days}</span>
+                    height={14}/>&nbsp; {Val.days}</span>
                      {/* <span className="timer flex items-center border-2 border-solid border-blue-500"><Image src="/images/TimeMachine.svg"
                     alt="icon"
                     width={14}
@@ -46,39 +47,48 @@ return (
 
           
          <div className="card-body listDetails  pt-3">
-         <div className="flex justify-between align-middle py-1 ">  
-           <span className="bg-teal-200 rounded-r-[15px] p-4"><span className="text-primary font-bold py-2">{Val.totalSupply}</span> <span className="font-bold text-white py-2">total supply  &nbsp; </span>
+         <div  className="my-4">  
+         <span className="bg-blue-500 rounded-r-[15px] py-2 px-1"><span class="text-white font-medium py-2">5000 REATs</span> <span class="font-bold text-white py-2"> &nbsp;total supply  &nbsp; </span></span> 
 
-            </span><span> <Link className="btn bg-primary font-bold text-white text-medium z-0 py-[8px] btnInvest ml-2 " href="#" rel="">
-             {Val.btntext}
-            </Link> </span>
+            {/* <span> <Link className=" text-default z-0 py-[4px] btnInvest ml-2 " href="#" rel="">
+             <BsHeart></BsHeart>{Val.btntext}
+            </Link> </span> */}
+            {/* <button class="text-default py-2 px-4 rounded  border-gray-200 btnInvest">
+            <span className="hover:fill-gray-300">
+              <Image src={Val.icon}
+                    alt="icon"
+                    width={14}
+                    height={14}/></span>&nbsp; <span>{Val.btntext} </span> 
+</button> */}
+        
+
            </div>
-           <h5 className="card-title text-default pt-1 pb-3 px-4 ">
+           <h5 className="card-title text-default pt-4 pb-3 px-4 ">
              {Val.title} 
             
            </h5>
-           <p className="text-default flex px-4">
+           <div className="text-default flex px-4 pt-2">
            <Image src="/images/location.svg"
                     alt="icon"
                     width={10}
                     height={10}/> &nbsp;&nbsp;
-            {Val.location} </p>
-           <div className="card-text pt-1 px-4">{Val.desc}</div>
+            {Val.location} </div>
+           <div className="card-text pt-0 px-4">{Val.desc}</div>
           
-           <p className="text-primary flex px-4 pt-1 pb-3">
+           <div className="text-primary flex px-4 pt-2 pb-6">
            <Image src="/images/bed.svg"
                     alt="icon"
                     width={15}
                     height={15}/> &nbsp;&nbsp;
-            {Val.bhk} </p>
+            {Val.bhk} </div>
             
          
-           <div className="bg-slate-100  py-[10px] rounded-lg flex justify-around">
-           <p><small>Dividend</small>
+           <div className="py-[10px] flex justify-around border-t border-solid border-gray-200">
+           <div><small>Dividend</small>
            <br/>
            <span className="text-primary  font-bold"> &nbsp;{Val.DividendPercentage}</span>
-           </p>
-           <p>
+           </div>
+           <div>
             <div className="flex">
            <span><small> Starts from</small> </span><span><Image src="/images/Tether.svg"
                     alt="icon"
@@ -87,13 +97,23 @@ return (
                     </div>
                   
                     <span className="text-primary font-bold"> {Val.reats}</span> &nbsp;Reats 
-           </p>
-           <p><small>Dividends</small>
+           </div>
+           <div><small>Dividends</small>
            <br/>
           
            <span className="text-primary font-bold">{Val.scheme}</span>
-           </p>
            </div>
+           </div>
+           <div className="m-4">
+           <button class="text-default rounded  bg-blue-100 flex  items-center justify-center w-full p-4 hover:bg-blue-300">
+            <span className="hover:fill-gray-300">
+              <Image src={Val.icon}
+                    alt="icon"
+                    width={14}
+                    height={14}/></span>&nbsp; <span>{Val.btntext} </span> 
+</button>
+           </div>
+                 
          </div>
        </div>
      );
@@ -132,16 +152,16 @@ return (
                     alt="icon"
                     width={10}
                     height={10}/> &nbsp;&nbsp;
-            {Val.location} </p>
+            {Val.location} </div>
            <div className="card-text">{Val.desc}</div>
            <p className="text-default flex line-clamp-3">
            <Image src="/images/bed.svg"
                     alt="icon"
                     width={15}
                     height={15}/> &nbsp;&nbsp;
-            {Val.bhk} </p>
-           <p className="card-text font-bold detailtext pt-1 pb-1">Dividend <span className="text-primary">{Val.DividendPercentage}</span> Starts from <span className="text-primary"> {Val.reats}</span> Reats </p>
-           <p className="card-text font-bold detailtext pb-1">Dividends  <span className="text-primary font-normal">{Val.scheme}</span> </p>
+            {Val.bhk} </div>
+           <p className="card-text font-bold detailtext pt-1 pb-1">Dividend <span className="text-primary">{Val.DividendPercentage}</span> Starts from <span className="text-primary"> {Val.reats}</span> Reats </div>
+           <p className="card-text font-bold detailtext pb-1">Dividends  <span className="text-primary font-normal">{Val.scheme}</span> </div>
           <div className="flex">
             <span className="font-bold text-grayshade">Total Supply : </span><span className="text-primary font-bold">{Val.totalSupply}</span>
             <span> <Link className="btn bg-primary  text-white z-0 py-[2px] btnInvest ml-2" href="#" rel="">

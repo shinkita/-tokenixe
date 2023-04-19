@@ -24,7 +24,7 @@ const Header = () => {
       <nav className="navbar md:container-fluid md:mx-auto sm: pr-0 ">
         {/* logo */}
         <div className="order-0 md:pl-[20px] sm: pl-[10px]">
-         <Link href="https://tokenixe.com" rel=""><Logo src={logo}  alt="logo"/></Link>
+         <Logo src={logo}  alt="logo"/>
         </div>
 
         {/* navbar toggler */}
