@@ -1,7 +1,6 @@
 import config from "@config/config.json";
 import { useContext,useState } from 'react';
 import { MyContext } from '../components/MenuContext';
-import ScrollMenu from 'react-horizontal-scroll-menu';
 import { GrFormPrevious,GrFormNext} from "react-icons/gr";
 const MobileTabs = () => {
     const { buttons, filter } = useContext(MyContext);
