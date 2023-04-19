@@ -1,7 +1,5 @@
 import config from "@config/config.json";
 import Image from "next/image";
-import Link from "next/link";
-import { BsHeartFill } from "react-icons/bs";
 const Listing = ({menuItem}) => {            
   
 return (
@@ -48,7 +46,7 @@ return (
           
          <div className="card-body listDetails  pt-3">
          <div  className="my-4">  
-         <span className="bg-blue-500 rounded-r-[15px] py-2 px-1"><span class="text-white font-medium py-2">5000 REATs</span> <span class="font-bold text-white py-2"> &nbsp;total supply  &nbsp; </span></span> 
+         <span className="bg-blue-500 rounded-r-[15px] py-2 px-1"><span className="text-white font-medium py-2">5000 REATs</span> <span className="font-bold text-white py-2"> &nbsp;total supply  &nbsp; </span></span> 
 
             {/* <span> <Link className=" text-default z-0 py-[4px] btnInvest ml-2 " href="#" rel="">
              <BsHeart></BsHeart>{Val.btntext}
@@ -105,7 +103,7 @@ return (
            </div>
            </div>
            <div className="m-4">
-           <button class="text-default rounded  bg-blue-100 flex  items-center justify-center w-full p-4 hover:bg-blue-300">
+           <button className="text-default rounded  bg-blue-100 flex  items-center justify-center w-full p-4 hover:bg-blue-300">
             <span className="hover:fill-gray-300">
               <Image src={Val.icon}
                     alt="icon"
