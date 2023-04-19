@@ -2,7 +2,7 @@ import config from "@config/config.json";
 import Image from "next/image";
 import Link from "next/link";
 
-const Logo = ({ src }) => {
+const Logo = ({ src }) => { 
   // destructuring items from config object
   const { base_url, logo, logo_width, logo_height, logo_text, title } =
     config.site;
