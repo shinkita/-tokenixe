@@ -2,7 +2,6 @@ import React, { useState, useCallback, useEffect } from "react";
 import config from "@config/config.json";
 import { useContext } from 'react';
 import { MyContext } from '../components/MenuContext';
-import MobileTabs from  "./MobileTabs";
 import DesktopTabs from "./DesktopTabs";
 import MobileTest from "./MobileTest";
 

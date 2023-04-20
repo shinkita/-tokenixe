@@ -1,6 +1,6 @@
 html {
   @apply text-base;
-}
+
 
 body {
   @apply bg-body font-primary font-normal leading-relaxed text-text;
@@ -47,4 +47,5 @@ h6,
 
 code {
   @apply before:hidden after:hidden;
+}
 }

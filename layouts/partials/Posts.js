@@ -5,8 +5,7 @@ import React, { useState,useEffect } from "react";
 import Listing from "./Listing";
 import Listingtabs from "./Listingtabs";
 import { MyContext } from '../components/MenuContext'
-import DesktopTabs from './DesktopTabs';
-import MobileTabs from './MobileTabs';
+
 const Posts = ({ posts }) => {
   // const [item, setItem] = useState(config.listingdata);
   const { blog_folder, summary_length } = config.settings;
