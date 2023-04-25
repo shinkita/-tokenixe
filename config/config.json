@@ -37,25 +37,22 @@
   "menuItems":[
     {
     "CategoryId":"1",
-    "CategoryTitle" :"Live IRO"
+    "CategoryTitle" :"Live Sales"
   },
   {
     "CategoryId":"2",
-    "CategoryTitle" :"Completed IRO"
+    "CategoryTitle" :"Completed Sales"
   },
   {
     "CategoryId":"3",
-    "CategoryTitle" :"Exited Position"
-  },   {
-    "CategoryId":"4",
-    "CategoryTitle" :"Upcoming IRO"
+    "CategoryTitle" :"Upcoming Sales"
   }
   ],  
    
   "listingdata":[
   {
     "id":"1",
-    "listing_type":"Live IRO",
+    "listing_type":"Live Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -72,7 +69,7 @@
   },
   {
     "id":"2",
-    "listing_type":"Live IRO",
+    "listing_type":"Live Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -89,7 +86,7 @@
   },
   {
     "id":"3",
-    "listing_type":"Completed IRO",
+    "listing_type":"Completed Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -106,7 +103,7 @@
   },
   {
     "id":"4",
-    "listing_type":"Live IRO",
+    "listing_type":"Live Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -123,7 +120,7 @@
   },
   {
     "id":"5",
-    "listing_type":"Exited Position",
+    "listing_type":"Live Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -135,12 +132,12 @@
      "ListingImage":"/images/5.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/partner.png",
-     "btntext":"View Details",
-     "icon":"/images/Eye.svg"
+     "btntext":"Invest Now",
+     "icon":"/images/like.svg"
   },
   {
     "id":"6",
-    "listing_type":"Live IRO",
+    "listing_type":"Upcoming Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",
@@ -152,12 +149,12 @@
      "ListingImage":"/images/7.jpg",
      "days":"20 days left",
      "typeOfferingIcon":"/images/core.png",
-     "btntext":"Invest Now",
+     "btntext":"Notify Me",
      "icon":"/images/like.svg"
   },
   {
     "id":"7",
-    "listing_type":"Upcoming IRO",
+    "listing_type":"Upcoming Sales",
      "title":"SC Plus- Silicon Oasis Property",
      "location":"Dubai, United Arab Emirates",
      "bhk":"3 BHK apartment",

@@ -183,10 +183,14 @@ position:relative;
 .btnInvest:hover{
 background-color:#f1f5f9;
 }
-.btntabs:hover{
- background-color:rgba(0, 0, 0, 0.12);
- border:none;
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .btntabs:hover {
+    background-color: rgb(247, 247, 248) !important;
+    -webkit-tap-highlight-color: transparent !important;
+    border:none;
  font-weight:bold;
+  }
 }
 .text-grayshade{
   color:#8F8787;
@@ -233,10 +237,21 @@ background-color:#f1f5f9;
  
 .fontbasebanner{
   font-size:14px!important;
+  padding-top:30px;
  }
 .btntabs
 {  margin-bottom:1rem;
  }
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+  .btntabs:hover {
+    background-color: rgb(247, 247, 248) !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+  .arrowBtn:hover{
+    background-color: rgb(247, 247, 248) !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
 
 .ltabs{
   text-align: center;

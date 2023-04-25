@@ -8,7 +8,7 @@ return (
  {menuItem.map((Val) => {
      return (
        <div
-         className="col-12 mb-8 sm:col-6 lg:col-4 py-4 px-4 border-0"
+         className="col-12 mb-8 sm:col-6 lg:col-4 py-4 px-4  hover:border-gray-300 hover:shadow-xl"
          key={Val.id}
        >
          <div className="card-img-top text-center border-emerald-200">
@@ -46,7 +46,7 @@ return (
           
          <div className="card-body listDetails  pt-3">
          <div  className="my-4">  
-         <span className="bg-blue-500 rounded-r-[15px] py-2 px-1"><span className="text-white font-medium py-2 pl-[7px]">5000 REATs</span> <span className="font-bold text-white py-2"> &nbsp;total supply  &nbsp; </span></span> 
+         <span className="bg-blue-500 rounded-r-[15px] py-2 px-1"> <span className="font-bold text-white py-2 pl-[7px]"> &nbsp;Price of token 5000</span><span className="text-white text-sm">/REAT </span>  &nbsp; </span>
 
             {/* <span> <Link className=" text-default z-0 py-[4px] btnInvest ml-2 " href="#" rel="">
              <BsHeart></BsHeart>{Val.btntext}
@@ -108,7 +108,7 @@ return (
               <Image src={Val.icon}
                     alt="icon"
                     width={14}
-                    height={14}/></span>&nbsp; <span>{Val.btntext} </span> 
+                    height={14}/></span>&nbsp; <span className="font-bold">{Val.btntext} </span> 
 </button>
            </div>
                  

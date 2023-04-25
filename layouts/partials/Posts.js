@@ -14,7 +14,6 @@ const Posts = ({ posts }) => {
 
    const allCategories = ['All', ...new Set(config.listingdata.map(item => item.listing_type))];
 const items =config.listingdata;
-  console.log(allCategories);
   const [menuItem, setMenuItem] = useState(items);
   const [buttons, setButtons] = useState(allCategories);
 
@@ -29,7 +28,6 @@ const items =config.listingdata;
   };
   
   useEffect(() => {
-    console.log(menuItem);
   }, [menuItem])
 
 
