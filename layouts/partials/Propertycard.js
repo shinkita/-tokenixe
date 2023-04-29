@@ -16,7 +16,7 @@ const PropertyCard = () => {
         </div>
         <MdShare  size={30} className="text-blue-500 cursor-pointer" />
     </div>
-    <div className="text-xl font-bold text-gray-700 py-2 mt-[15px]">
+    <div className="text-xl font-bold text-gray-700  py-[25px]">
         Beautiful 5-Bedroom Villa with an Incredible View
     </div>
       <div class="flex flex-row justify-between">
@@ -50,7 +50,7 @@ const PropertyCard = () => {
         </div>
     </div>
   
-    <div class="flex flex-row gap-[5px] items-center mt-[15px]">
+    <div class="flex flex-row gap-[5px] items-center py-[25px]">
     <Image src="/images/location.svg"
                     alt="icon"
                     width={10}

@@ -31,16 +31,17 @@ const viewProperty=()=>{
 <PropertyTabs  tabs={config.PropertyTabs}/>
 
 {/*--Location--*/}
-<div className="w-full">
-<div className="flex flex-col px-0 py-[20px] ">
-    <div className="text-4xl font-bold text-gray-700 text-center py-[20px] ">Location</div>
-    <img className="w-full object-cover pt-4" src="https://sage-malasada-060e9f.netlify.app/map_01.png" alt=""/></div>
-</div>
+
+<div className="flex flex-col px-0 py-[10px]">
+    <div className="text-4xl font-bold text-gray-700 text-center pb-[20px]">Location</div>
+    <img className="w-full object-cover pt-4" src="https://sage-malasada-060e9f.netlify.app/map_01.png" alt=""/>
+    </div>
+
 {/*--Location--*/}
 {/*--developer Details--*/}
-<div className="w-full md:lg:w-auto">
-<div className="flex flex-col gap-[20px]  py-[30px] px-2">
-    <div className="text-4xl font-bold text-gray-700 text-center py-[20px] lg:py-[30px]">Developer &amp; Property Manager</div>
+<div className="section w-full md:lg:w-auto">
+<div className="flex flex-col gap-[20px]  px-2">
+    <div className="text-4xl font-bold text-gray-700 text-center pb-[20px]">Developer &amp; Property Manager</div>
     <div className="flex flex-col lg:flex-row gap-[20px] lg:gap-[50px]">
         <div className="w-full lg:w-1/2 flex flex-col gap-[10px] lg:gap-[20px]">
             <div className="text-2xl text-gray-700 text-center">
