@@ -315,6 +315,65 @@ footer,.footImg{
   background-color: #f1f1f1;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar-x {
   display: none;
+}
+.iconSvg{
+  width:11%;
+  Fill:gray;
+}
+/*tabs*/
+.tab{
+  //min-height:50px;
+  width:100%;
+  padding:25px;
+ }
+
+ul.inline{
+  list-style:none;
+  padding: 0;
+  margin-bottom:0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  li{
+    display:inline-block;
+    margin-left:0;
+    padding:10px;
+    border-bottom:2px solid #eee;
+    transition: all .5s;
+    font-weight:600;
+    cursor:pointer;
+    color:rgb(55 125 255);
+    &.selected{
+      border-bottom:2px solid #8F8787;
+      color:#444;
+    }
+  }
+}
+.accordion {
+ 
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add when click */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }

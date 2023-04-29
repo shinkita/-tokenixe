@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="md:header w-auto fixed top-0 left-0 right-0 z-10 sm: mbtheme">
-      <nav className="navbar md:container-fluid md:mx-auto sm: pr-0 ">
+      <nav className="navbar  md:mx-auto sm: pr-0 ">
         {/* logo */}
         <div className="order-0 md:pl-[20px] sm: pl-[10px]">
          <Logo src={logo}  alt="logo"/>

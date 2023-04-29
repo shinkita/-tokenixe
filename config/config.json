@@ -196,8 +196,33 @@
         "dividends":"45533",
         "Equity":"1%"
       }
-    ]
-  
+    ],
+ "PropertyTabs":
+  [
+   { 
+    "id":1,
+    "TabName": "Price History",
+   "component":"<PriceHistory /> "
+  },
+  { "id":2,
+    "TabName": "Analysis Calculator",
+   "component": "<AnalysisCalculator />"
+   },
+   { "id":3,
+    "TabName": "Financial Details",
+    "component": "<Financial Details />"
+   },
+   {"id":4, 
+    "TabName": "Property Overview", 
+   "component": "<Property Overview />"
+  },
+  { "id":5,
+    "TabName": "Documents",
+   "component": "<Documents />"  
+  } 
+ ] 
+
 }
+
 
 
