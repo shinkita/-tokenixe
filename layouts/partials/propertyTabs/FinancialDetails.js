@@ -1,55 +1,159 @@
 import React, { useState } from "react";
-
-const accordionItems = [
-  { btn: "Transaction", content: "Transaction Details" },
-  { btn: "Rental", content: "Rental Details" }
-];
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const FinancialDetails = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
 
-  const onClickButton = (index) => {
-    setActiveIndex(index);
-  };
-
-  const renderAccordionItems = accordionItems.map((item, index) => {
-    const isActive = index === activeIndex;
-    let content;
-
-    if (isActive) {
-      if (item.btn === "Transaction") {
-        content = (
-          <div>
-            <p>Transaction content goes here</p>
-          </div>
-        );
-      } else if (item.btn === "Rental") {
-        content = (
-          <div>
-            <p>Rental content goes here</p>
-            <ul>
-              <li>Rental Start Date: 01/01/2022</li>
-              <li>Rental End Date: 01/01/2023</li>
-            </ul>
-          </div>
-        );
-      }
-    }
 
     return (
-      <React.Fragment key={index}>
-        <button
-          className={`accordion ${isActive ? "active" : ""}`}
-          onClick={() => onClickButton(index)}
+      <div className="flex flex-col gap-[10px]">
+      <div className="text-4xl font-bold text-default text-center pb-[30px]">Financial Details</div>
+      <div className="flex flex-wrap w-full">
+      <div className="w-full md:w-1/2 px-4">
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
         >
-          {item.btn}
-        </button>
-        <div className={`panel ${isActive ? "" : "hidden"}`}>{content}</div>
-      </React.Fragment>
+         <Typography className="text-primary">Transaction</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Property Listing Price :</div>
+        <div className="text-sm text-gray-700">USD 4,1000,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-gray-700">Transaction Costs</div>
+        <div className="text-sm font-bold text-gray-700">USD 400,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Title Search &amp; Insurance (0.5% - 1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Recording Fees (0.2% - 0.5%)</div>
+        <div className="text-sm text-gray-700">USD 20,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Legal Fees (0.5% - 1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Taxes (1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Broker Fee (3%)</div>
+        <div className="text-sm text-gray-700">USD 120,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Renovation Costs (2%)</div>
+        <div className="text-sm text-gray-700">USD 80,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Metropoly fee (1.5%)</div>
+        <div className="text-sm text-gray-700">USD 60,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-[#377eff]">Total Acquisition Cost :</div>
+        <div className="text-sm font-bold text-[#377eff]">USD 4,500,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Total Number of NFTs :</div>
+        <div className="text-sm text-gray-700">1,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Value of One NFT :</div>
+        <div className="text-sm text-gray-700">1 / 1000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-[#377eff]">Mint Price Per NFT :</div>
+        <div className="text-sm font-bold text-[#377eff]">USD 4,500</div>
+    </div>
+</div>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      <div className="w-full md:w-1/2 px-4">
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className="text-primary">Rental</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Property Listing Price :</div>
+        <div className="text-sm text-gray-700">USD 4,1000,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-gray-700">Transaction Costs</div>
+        <div className="text-sm font-bold text-gray-700">USD 400,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Title Search &amp; Insurance (0.5% - 1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Recording Fees (0.2% - 0.5%)</div>
+        <div className="text-sm text-gray-700">USD 20,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Legal Fees (0.5% - 1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Taxes (1%)</div>
+        <div className="text-sm text-gray-700">USD 40,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Broker Fee (3%)</div>
+        <div className="text-sm text-gray-700">USD 120,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Renovation Costs (2%)</div>
+        <div className="text-sm text-gray-700">USD 80,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Metropoly fee (1.5%)</div>
+        <div className="text-sm text-gray-700">USD 60,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-[#377eff]">Total Acquisition Cost :</div>
+        <div className="text-sm font-bold text-[#377eff]">USD 4,500,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Total Number of NFTs :</div>
+        <div className="text-sm text-gray-700">1,000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm text-gray-700">Value of One NFT :</div>
+        <div className="text-sm text-gray-700">1 / 1000</div>
+    </div>
+    <div className="flex flex-row justify-between">
+        <div className="text-sm font-bold text-[#377eff]">Mint Price Per NFT :</div>
+        <div className="text-sm font-bold text-[#377eff]">USD 4,500</div>
+    </div>
+</div>
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+      </div>
+      </div>
     );
-  });
-
-  return <div>{renderAccordionItems}</div>;
+ 
 };
 
 export default FinancialDetails;

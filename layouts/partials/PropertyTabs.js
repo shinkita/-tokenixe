@@ -21,13 +21,14 @@ const PropertyTabs = (props) => {
     },
     {
       id:3,
-      tabName:"Financial Details ",
-      component: <FinancialDetails />
+      tabName:"Property Overview",
+      component: <PropertyOverview />
     },
     {
       id:4,
-      tabName:"Property Overview",
-      component: <PropertyOverview />
+      tabName:"Financial Details ",
+      component: <FinancialDetails />
+     
     },
     {
       id:5,
@@ -51,7 +52,7 @@ const PropertyTabs = (props) => {
           })}
         </ul>
                 
-        <div className="tab bg-theme-light">
+        <div className="tab bg-theme-light py-[50px]">
         {propertyTabs[selected].component}
           
           </div> 

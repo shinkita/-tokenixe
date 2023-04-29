@@ -3,7 +3,7 @@ const Documents = (props) => {
     return <div>
       
       
-      <div class="flex flex-col gap-[10px]  lg:py-[30px]">
+      <div class="flex flex-col gap-[10px] ">
     <div class="text-4xl font-bold text-default text-center ">Documents</div>
     <div class="text-xl text-default text-center pt-[10px] pb-[30px]">Confidential property documents</div>
     <div class="flex flex-col lg:flex-row gap-[20px] justify-center mx-[10px] lg:mx-0">

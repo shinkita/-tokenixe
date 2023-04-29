@@ -1,8 +1,8 @@
 const AnalysisCalculator = () => {
     return <div>
 
-<div className="flex flex-col gap-[20px] p-[20px]">
-    <div className="text-4xl font-bold text-gray-700 text-center py-[50px]">How much can you earn with this Property?*</div>
+<div className="flex flex-col gap-[20px]">
+    <div className="text-4xl font-bold text-gray-700 text-center pb-[30px]">How much can you earn with this Property?*</div>
     <div className="flex flex-col lg:flex-row gap-[20px] lg:gap-0">
         <div className="w-full lg:w-2/3 flex flex-col gap-[20px] pr-[20px] border-r-none lg:border-r border-gray-300">
             <div className="flex flex-col gap-[10px]">

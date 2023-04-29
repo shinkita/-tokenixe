@@ -2,9 +2,9 @@ const PropertyOverview = () => {
     return <div>
 
 
-<div class="flex flex-col lg:flex-row gap-[20px] py-[30px]">
+<div class="flex flex-col lg:flex-row gap-[20px]">
     <div class="w-full lg:w-1/2 flex flex-col gap-[30px]">
-        <div class="text-4xl font-bold text-gray-700 text-center py-[20px]">Property Info</div>
+        <div class="text-4xl font-bold text-gray-700 text-center">Property Info</div>
         <div class="flex flex-col gap-[30px]">
             <div class="flex flex-row">
                 <div class="w-1/2 flex flex-col gap-[20px] items-center">
