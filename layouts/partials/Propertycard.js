@@ -5,7 +5,7 @@ import React from 'react';
 const PropertyCard = () => {
   return (
 <>
-    <div className="flex flex-row justify-start items-center gap-[20px] ">
+    <div className="flex flex-row justify-start items-center gap-[20px] mb-pt-2">
         <div className="flex flex-row gap-2 rounded-full border border-blue-500 p-2 justify-center items-center">
             <MdSingleBed size={30}  className="text-blue-500"/>
             <div className="text-blue-500 text-base">5 Beds | 2,9990 sqft</div>
