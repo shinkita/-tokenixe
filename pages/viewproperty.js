@@ -9,7 +9,7 @@ const viewProperty=()=>{
     return(
 <>
 <Header/>
-<main className="mt-[140px]">
+<main className="sm:mt-[120px] md:mt-[140px]">
 
 <div className="flex flex-wrap">
   <div className="w-full  md:w-1/2 px-4">

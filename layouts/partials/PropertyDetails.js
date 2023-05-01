@@ -14,7 +14,7 @@ const PropertyDetails = () => {
             <div class="text-basic text-gray-700 text-center lg:text-left">All real estate offered on the Metropoly marketplace must pass a strict screening and selection process to provide users with the best opportunity to earn both rental yield and capital appreciation. In addition, we leverage data from leading
                 third - party vendors to ensure that all of our internal research and analysis tools are accurate and reliable in current market conditions.</div>
         </div>
-        <div class="w-1/2 hidden lg:flex flex-col gap-[20px]">
+        <div class="w-1/2 lg:flex flex-col gap-[20px] sm: w-full">
             <div class="flex flex-row">
                 <div class="w-1/5 flex flex-col items-center justify">
                 <div className="p-4 bg-gray-100 rounded-full"><BiBasketball size={32} /></div>

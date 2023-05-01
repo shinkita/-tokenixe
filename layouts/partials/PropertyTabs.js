@@ -1,63 +1,51 @@
-import React from 'react';
-import { useState } from 'react';
-import Documents from "@partials/propertyTabs/Documents"
-import PriceHistoryChart from "@partials/propertyTabs/PriceHistoryChart"
-import AnalysisCalculator from "@partials/propertyTabs/AnalysisCalculator"
-import FinancialDetails from "@partials/propertyTabs/FinancialDetails"
-import PropertyOverview from "@partials/propertyTabs/PropertyOverview"
+import React, { useState, useCallback, useEffect } from "react";
+import DesktopPropertyTabs from "./DesktopPropertyTabs";
+import MobilePropertyTabs from "./MobilePropertyTabs";
 
-const PropertyTabs = (props) => {
-  const [selected, setSelected] = useState(props.selected || 0);
-  const propertyTabs = [
-    {
-      id:1,
-      tabName:"Price History ",
-      component: <PriceHistoryChart />
-    },
-    {
-      id:2,
-      tabName:"Analysis Calculator",
-      component: <AnalysisCalculator />
-    },
-    {
-      id:3,
-      tabName:"Property Overview",
-      component: <PropertyOverview />
-    },
-    {
-      id:4,
-      tabName:"Financial Details ",
-      component: <FinancialDetails />
-     
-    },
-    {
-      id:5,
-      tabName:"Documents",
-      component: <Documents />
-    }
-  ];
-
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
  
-  function handleChange(index) {
-    setSelected(index);
-  }
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const media = window.matchMedia(`(max-width:${width}px)`);
+      media.addEventListener('change', updateTarget);
+
+      if (media.matches) {
+        setTargetReached(true);
+      }
+
+      return () => media.removeEventListener('change', updateTarget);
+    }
+  }, [width, updateTarget]);
+
+  return targetReached;
+};
+
+const PropertyTabs = () => {
+  
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <>
-      <div class="w-full md:w-100 px-4 py-[30px]">
-        <ul className="inline flex justify-evenly">
-          {propertyTabs.map((elem, index) => {
-            let style = index === selected ? 'selected': '';
-            return <li className={style} key={index} onClick={() => handleChange(index)}>{elem.tabName}</li>
-          })}
-        </ul>
-                
-        <div className="tab bg-theme-light py-[50px]">
-        {propertyTabs[selected].component}
-          
-          </div> 
+      {isBreakpoint ? (
+        <div className="flex flex-col w-full">
+          <MobilePropertyTabs />
+        </div>
+      ) : (
+        <div className="flex flex-col w-full">
+          <DesktopPropertyTabs />
+        </div>
+      )}
 
-      </div>
+   
     </>
   );
 };

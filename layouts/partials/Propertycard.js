@@ -32,7 +32,7 @@ const PropertyCard = () => {
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PhotoLibraryIcon">
                 <path d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4 2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"></path>
             </svg>
-            <div class="text-md text-gray-700">1000 Total USDT's</div>
+            <div class="text-md text-gray-700 ">1000 Total USDT's</div>
         </div>
         <div class="flex flex-row gap-[5px] items-center">
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon">
@@ -50,7 +50,7 @@ const PropertyCard = () => {
         </div>
     </div>
   
-    <div class="flex flex-row gap-[5px] items-center py-[25px]">
+    <div class="flex flex-row gap-[5px] items-center sm: my-[20px] md: mt-[15px]">
     <Image src="/images/location.svg"
                     alt="icon"
                     width={10}
@@ -58,8 +58,8 @@ const PropertyCard = () => {
              
         <div class="text-md text-gray-400">Los Angeles, United States of America</div>
     </div>
-    <div class="flex flex-row gap-[20px]">
-        <div class="w-1/2 flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg">
+    <div class="flex  gap-[20px] sm: flex-col md:flex-row ">
+        <div class="flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg sm: w-full md:w-1/2">
             <div class="text-md text-gray-700">Property price</div>
             <div class="flex flex-row justify-between">
                 <div class="text-md font-bold text-gray-700">5,200,000 USD</div>
@@ -68,7 +68,7 @@ const PropertyCard = () => {
                 </svg>
             </div>
         </div>
-        <div class="w-1/2 flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg">
+        <div class="flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg sm: w-full md:w-1/2">
             <div class="text-md text-gray-700">Dividend Yield</div>
             <div class="flex flex-row justify-between">
                 <div class="text-md font-bold text-gray-700">7.79%</div>
@@ -78,10 +78,10 @@ const PropertyCard = () => {
                     ></path>
                 </svg>
             </div>
-        </div>
+        </div> 
     </div>
-    <div class="flex flex-row gap-[20px]">
-        <div class="w-1/2 flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg">
+    <div class="flex  gap-[20px] sm: flex-col md:flex-row mb-pt-2">
+        <div class="flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg sm: w-full md:w-1/2">
             <div class="text-md text-gray-700">5 YR Expected return</div>
             <div class="flex flex-row justify-between">
                 <div class="text-md font-bold text-gray-700">49%</div>
@@ -91,7 +91,7 @@ const PropertyCard = () => {
                 </svg>
             </div>
         </div>
-        <div class="w-1/2 flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg">
+        <div class="flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg sm: w-full md:w-1/2">
             <div class="text-md text-gray-700">Value of One NFT</div>
             <div class="flex flex-row justify-between">
                 <div class="text-md font-bold text-gray-700">10/1000</div>

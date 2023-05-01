@@ -12,7 +12,7 @@ const FinancialDetails = () => {
       <div className="flex flex-col gap-[10px]">
       <div className="text-4xl font-bold text-default text-center pb-[30px]">Financial Details</div>
       <div className="flex flex-wrap w-full">
-      <div className="w-full md:w-1/2 px-4">
+      <div className="w-full md:w-1/2 px-4 ">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -81,7 +81,7 @@ const FinancialDetails = () => {
         </AccordionDetails>
       </Accordion>
       </div>
-      <div className="w-full md:w-1/2 px-4">
+      <div className="w-full md:w-1/2 px-4 mb-pt-1">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
