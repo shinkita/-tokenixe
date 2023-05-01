@@ -83,7 +83,7 @@ const MobilePropertyTabs = () => {
             size={40}
           />
 </div> 
-            <div className="tab bg-theme-light">
+            <div className="tab bg-theme-light py-[60px]">
               {propertyTabs[selected].component}
             </div>
           

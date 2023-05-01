@@ -19,8 +19,8 @@ const PropertyCard = () => {
     <div className="text-xl font-bold text-gray-700  py-[25px]">
         Beautiful 5-Bedroom Villa with an Incredible View
     </div>
-      <div class="flex flex-row justify-between">
-        <div class="flex flex-row gap-[5px] items-center">
+      <div class="flex flex-row justify-between mb-1">
+        <div class="flex flex-col gap-5 md:flex-row items-center">
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GroupsIcon">
                 <path
                     d="M12 12.75c1.63 0 3.07.39 4.24.9 1.08.48 1.76 1.56 1.76 2.73V18H6v-1.61c0-1.18.68-2.26 1.76-2.73 1.17-.52 2.61-.91 4.24-.91zM4 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm1.13 1.1c-.37-.06-.74-.1-1.13-.1-.99 0-1.93.21-2.78.58C.48 14.9 0 15.62 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29zM20 13c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm4 3.43c0-.81-.48-1.53-1.22-1.85-.85-.37-1.79-.58-2.78-.58-.39 0-.76.04-1.13.1.4.68.63 1.46.63 2.29V18H24v-1.57zM12 6c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"
@@ -28,13 +28,13 @@ const PropertyCard = () => {
             </svg>
             <div class="text-md text-gray-700">800 Owners</div>
         </div>
-        <div class="flex flex-row gap-[5px] items-center">
+        <div class="flex flex-col gap-5 md:flex-row items-center">
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PhotoLibraryIcon">
                 <path d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4 2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"></path>
             </svg>
-            <div class="text-md text-gray-700 ">1000 Total USDT's</div>
+            <div class="text-md text-gray-700 text-center">1000 Total USDT's</div>
         </div>
-        <div class="flex flex-row gap-[5px] items-center">
+        <div class="flex flex-col gap-5 md:flex-row items-center">
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="VisibilityIcon">
                 <path
                     d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
@@ -42,7 +42,7 @@ const PropertyCard = () => {
             </svg>
             <div class="text-md text-gray-700">0 Views</div>
         </div>
-        <div class="flex flex-row gap-[5px] items-center">
+        <div class="flex flex-col gap-5 md:flex-row items-center">
             <svg class="iconSvg css-1t8mnmp" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FavoriteIcon">
                 <path d="m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
             </svg>
@@ -80,7 +80,7 @@ const PropertyCard = () => {
             </div>
         </div> 
     </div>
-    <div class="flex  gap-[20px] sm: flex-col md:flex-row mb-pt-2">
+    <div class="flex  gap-[20px] sm: flex-col md:flex-row mt-4">
         <div class="flex flex-col gap-[20px] p-[20px] border border-gray-300 rounded-lg sm: w-full md:w-1/2">
             <div class="text-md text-gray-700">5 YR Expected return</div>
             <div class="flex flex-row justify-between">

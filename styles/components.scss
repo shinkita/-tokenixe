@@ -126,6 +126,14 @@ position:relative;
   width:11%;
   Fill:gray;
 }
+.iconSvgC{
+  width:6%;
+    Fill:rgb(55 125 255);
+}
+.iconSvgW{
+  width:6%;
+    Fill:white;
+}
  .timer{
   background: #3b82f6;
   border-radius: 5px;
@@ -250,7 +258,7 @@ background-color:#f1f5f9;
 {  margin-bottom:1rem;
  }
  .iconSvg{
-  width:22%;
+  width:20%;
 }
  @media screen and (-webkit-min-device-pixel-ratio:0) {
   .btntabs:hover {
@@ -384,3 +392,4 @@ ul.tabsitems{
   display: none;
   overflow: hidden;
 }
+

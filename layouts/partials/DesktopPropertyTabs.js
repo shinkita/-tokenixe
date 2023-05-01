@@ -51,7 +51,7 @@ const DesktopPropertyTabs=(props)=>{
               })}
             </ul>
                     
-            <div className="tab bg-theme-light">
+            <div className="tab bg-theme-light py-[60px]">
             {propertyTabs[selected].component}
               
               </div> 

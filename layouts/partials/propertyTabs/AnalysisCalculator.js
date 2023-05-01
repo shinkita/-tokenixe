@@ -1,3 +1,5 @@
+import AnalysisChart from "../AnalysisChart";
+
 const AnalysisCalculator = () => {
     return <div>
 
@@ -9,40 +11,43 @@ const AnalysisCalculator = () => {
                 <div className="flex flex-col lg:flex-row gap-[20px]">
                     <div className="w-full lg:w-1/2 flex flex-col gap-[10px]">
                         <div className="text-basic text-gray-700">Initial Amount</div>
-                        <input placeholder="USD 20,000" type="number" className="p-[5px] focus:outline-none bg-white rounded"/></div>
+                        <input placeholder="USD 20,000" type="number" className="p-[5px] focus:outline-none bg-gray-200 rounded border-0"/></div>
                     <div className="w-full lg:w-1/2 flex flex-col gap-[10px]">
                         <div className="text-basic text-gray-700">Expected Annual Appreciaton</div>
-                        <input placeholder="2 %" type="number" className="p-[5px] focus:outline-none bg-white rounded"/></div>
+                        <input placeholder="2 %" type="number" className="p-[5px] focus:outline-none bg-gray-200 rounded border-0"/></div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-[20px]">
                     <div className="w-full lg:w-1/2 flex flex-col gap-[10px]">
                         <div className="text-basic text-gray-700">Net Dividend Yield</div>
-                        <input placeholder="7.79 %" type="number" className="p-[5px] focus:outline-none bg-white rounded"/></div>
+                        <input placeholder="7.79 %" type="number" className="p-[5px] focus:outline-none bg-gray-200 rounded border-0"/></div>
                     <div className="w-full lg:w-1/2 flex flex-col gap-[10px]">
                         <div className="text-basic text-gray-700">Holding Period</div>
-                        <input placeholder="5 Years" type="number" className="p-[5px] focus:outline-none bg-white rounded"/></div>
+                        <input placeholder="5 Years" type="number" className="p-[5px] focus:outline-none bg-gray-200 rounded border-0"/></div>
                 </div>
-            </div></div>
+                <AnalysisChart />
+            </div>
+            
+            </div>
         <div className="w-full lg:w-1/3 flex flex-col gap-[20px] lg:gap-[50px] ml-[20px] pr-[40px] lg:pr-0">
             <div className="flex flex-col gap-[5px] lg:gap-[20px]">
-                <div className="text-basic text-center lg:text-left text-gray-700">Total Average Annualized Return</div>
-                <div className="text-basic text-center lg:text-left font-bold text-gray-700">9.79%</div>
+                <div className="text-basic  text-center lg:text-left text-gray-700">Total Average Annualized Return</div>
+                <h4 className="text-basic text-center lg:text-left font-bold text-gray-700">9.79%</h4>
             </div>
             <div className="flex flex-col gap-[5px] lg:gap-[20px]">
                 <div className="text-basic text-center lg:text-left text-gray-700">Total Rental Income</div>
-                <div className="text-basic text-center lg:text-left font-bold text-gray-700">USD 7,790</div>
+                <h5 className="text-basic text-center lg:text-left font-bold text-gray-700">USD 7,790</h5>
             </div>
             <div className="flex flex-col gap-[5px] lg:gap-[20px]">
                 <div className="text-basic text-center lg:text-left text-gray-700">Expected Capital Appreciation</div>
-                <div className="text-basic text-center lg:text-left font-bold text-gray-700">USD 2,000</div>
+                <h5 className="text-basic text-center lg:text-left font-bold text-gray-700">USD 2,000 </h5>
             </div>
             <div className="flex flex-col gap-[5px] lg:gap-[20px]">
                 <div className="text-basic text-center lg:text-left text-gray-700">Total Return</div>
-                <div className="text-basic text-center lg:text-left font-bold text-gray-700">USD 9,790</div>
+                <h5 className="text-basic text-center lg:text-left font-bold text-gray-700">USD 9,790</h5>
             </div>
             <div className="flex flex-col gap-[5px] lg:gap-[20px]">
                 <div className="text-basic text-center lg:text-left font-basic text-gray-500">Total Expected Value After 5 Years</div>
-                <div className="text-2xl text-center lg:text-left font-bold text-[#377eff]">USD 29,790</div>
+                <h5 className="text-2xl text-center lg:text-left font-bold text-[#377eff]">USD 29,790</h5>
             </div>
         </div>
     </div>

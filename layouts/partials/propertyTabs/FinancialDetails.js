@@ -4,16 +4,22 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { makeStyles } from '@mui/styles';
 
 const FinancialDetails = () => {
-
+  const useStyles = makeStyles({
+    root: {
+      borderRadius: '20px', // Set the border radius to 8px
+      border: '0', // Set a 2px solid black border
+    },
+  });
 
     return (
       <div className="flex flex-col gap-[10px]">
       <div className="text-4xl font-bold text-default text-center pb-[30px]">Financial Details</div>
       <div className="flex flex-wrap w-full">
       <div className="w-full md:w-1/2 px-4 ">
-      <Accordion>
+      <Accordion sx={{ borderRadius: '40px' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -81,7 +87,7 @@ const FinancialDetails = () => {
         </AccordionDetails>
       </Accordion>
       </div>
-      <div className="w-full md:w-1/2 px-4 mb-pt-1">
+      <div className="w-full md:w-1/2 px-4 mb-pt-2">
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
