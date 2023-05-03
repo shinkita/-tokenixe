@@ -5,6 +5,7 @@ import PropertyDetails from "@layouts/partials/PropertyDetails"
 import PropertyTabs from "@layouts/partials/PropertyTabs"
 import ImageGallery from "@layouts/partials/ImageGallery"
 import config from "@config/config.json";
+import Image from "next/image"
 
 const viewProperty=(gallery)=>{
     return(

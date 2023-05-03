@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import Documents from "@partials/propertyTabs/Documents";
 import PriceHistoryChart from "@partials/propertyTabs/PriceHistoryChart";
 import AnalysisCalculator from "@partials/propertyTabs/AnalysisCalculator";
-import FinancialDetails from "@partials/propertyTabs/FinancialDetails";
+import FinancialDetails from "@layouts/partials/propertyTabs/FinancialDetails";
 import PropertyOverview from "@partials/propertyTabs/PropertyOverview";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
