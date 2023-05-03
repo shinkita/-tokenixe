@@ -6,9 +6,9 @@ const PriceHistoryChart = () => {
   
 
   const [blocks, setBlocks] = useState({
-    block1: true,
-    block2: false,
-    block3: false,
+    block1: false,
+    block2: false
+   
   });
 
   const toggle = (index) => () => {
@@ -21,8 +21,8 @@ const PriceHistoryChart = () => {
   const toggleExpand = (expand = false) => () => {
     setBlocks({
       block1: expand,
-      block2: expand,
-      block3: expand,
+      block2: expand
+    
     });
   };
 

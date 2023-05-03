@@ -1,5 +1,6 @@
 import config from "@config/config.json";
 import Image from "next/image";
+import Link from "next/link"
 const Listing = ({menuItem}) => {            
   
 return (
@@ -12,12 +13,13 @@ return (
          key={Val.id}
        >
          <div className="card-img-top text-center border-emerald-200">
-           <Image src={Val.ListingImage} 
+           <Link href="/viewproperty"><Image src={Val.ListingImage} 
            alt={Val.title} 
            className="photo" 
            width={500}
            height={500}
-                    />
+                    /> 
+                    </Link>
                   
                   <span className="type">  {Val.listing_type}</span>
                      {/* <span className="type font-semibold border-2 border-solid border-blue-500">  {Val.listing_type}</span> */}
